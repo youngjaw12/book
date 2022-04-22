@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :authors
   resources :articles
   root 'home#index'
   get 'home/about'
